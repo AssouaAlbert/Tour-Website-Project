@@ -1,0 +1,16 @@
+//Imports
+@import "./abstracts/functions.scss";
+@import "./abstracts/mixins.scss";
+//Variables: colors, font-size
+@import "./abstracts/variables.scss"; 
+@import "./base/base";
+@import "./base/animations"; //Same as all of the others
+@import "./base/typography";
+@import "./pages/home";
+@import "./layout/header";
+@import "./components/button";
+@import "./base/typography";
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+
+
+
