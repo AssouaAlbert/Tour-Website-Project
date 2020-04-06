@@ -1,0 +1,26 @@
+{
+  "name": "tour-website-project",
+  "version": "1.0.0",
+  "description": "\"This is awebsite from an online css course by Jonas Schmedtmann; Udemy\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "E;ou",
+    "bat",
+    "Assoua",
+    "Albert",
+    "CSS",
+    "Project",
+    "Sass",
+    "Jonas",
+    "Schmedtmann",
+    "Udemy"
+  ],
+  "author": "Albert Eloumbat Assoua",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
