@@ -206,13 +206,11 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #ebebeb;
   margin: 0 auto;
   font-size: 1.6rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row [class^="col-"] {
-    background-color: red;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }

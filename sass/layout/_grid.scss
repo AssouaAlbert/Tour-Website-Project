@@ -1,13 +1,13 @@
 .row {
     max-width: $grid-width;
-    background-color:lighten($color: #000000, $amount: 92%);
+    // background-color:lighten($color: #000000, $amount: 92%); //Not useful
     margin: 0 auto;
     font-size: 1.6rem;
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
     }
     [class^="col-"]{
-        background-color: red;
+        // background-color: red; //Not useful
         float: left;
         &:not(:last-child){
             margin-right: $gutter-horizontal;
