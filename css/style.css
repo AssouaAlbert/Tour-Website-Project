@@ -80,7 +80,19 @@ body {
   font-weight: 800;
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.3s; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5 1rem 2rem rgba(0, 0, 0, 0.4); }
+
+.u-text-center {
+  text-align: center; }
+
+.u-margin-bottom-80 {
+  margin-bottom: 8rem; }
 
 .section-about {
   background-color: #f7f7f7;
@@ -184,7 +196,13 @@ body {
   font-weight: 800;
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.3s; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5 1rem 2rem rgba(0, 0, 0, 0.4); }
 
 .row {
   max-width: 114rem;
