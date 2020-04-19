@@ -694,21 +694,40 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.4);
     transition: all 0.4s; }
+    @media only screen and (max-width: 56.25em) {
+      .popup__content {
+        width: 90%; } }
+    @media only screen and (max-width: 37.5em) {
+      .popup__content {
+        width: 100%; } }
   .popup:target .popup__content {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1); }
   .popup__left {
     width: 25%;
     display: table-cell; }
+    @media only screen and (max-width: 56.25em) {
+      .popup__left {
+        width: 100%;
+        display: table-row; } }
   .popup__right {
     width: 75%;
     display: table-cell;
     vertical-align: middle;
     padding: 0 3rem;
     position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .popup__right {
+        width: 100%;
+        display: inline-block;
+        padding: 1rem; } }
   .popup__img {
     display: block;
     width: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .popup__img {
+        width: 50%;
+        display: inline-block; } }
   .popup__text {
     font-size: 1.4rem;
     column-count: 2;

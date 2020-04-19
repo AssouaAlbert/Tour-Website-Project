@@ -22,6 +22,12 @@
         overflow: hidden;
         opacity: 0;
         transform: translate(-50%,-50%) scale(0.4);
+        @include respond (tab-port) {
+            width: 90%;
+        }
+        @include respond (phone) {
+            width: 100%;
+        }
         transition: all 0.4s;
     }
     &:target &__content {
@@ -31,6 +37,10 @@
     &__left {
         width: 25%;
         display: table-cell;
+        @include respond (tab-port) {
+            width: 100%;
+            display: table-row;
+        }
     }
     &__right {
         width: 75%;
@@ -38,10 +48,19 @@
         vertical-align: middle;
         padding: 0 3rem;
         position: relative;
+        @include respond (tab-port) {
+            width: 100%;
+            display: inline-block;
+            padding: 1rem;
+        }
     }
     &__img {
         display: block;
         width: 100%;
+        @include respond (tab-port) {
+            width: 50%;
+            display: inline-block;
+        }
     }
     &__text {
         font-size: 1.4rem;
@@ -56,7 +75,6 @@
         -ms-hyphens: auto;
         -moz-hyphens: auto;
         hyphens: auto;
-
     }
     &__close {
         position: absolute;
