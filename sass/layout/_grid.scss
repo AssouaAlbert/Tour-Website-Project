@@ -3,14 +3,28 @@
     // background-color:lighten($color: #000000, $amount: 92%); //Not useful
     margin: 0 auto;
     font-size: 1.6rem;
+    @include respond (tab-port) {
+        max-width: $grid-width-small
+    }
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
+        @include respond (tab-port) {
+            margin-bottom: $gutter-vertical-small;
+        }
     }
+
     [class^="col-"]{
         // background-color: red; //Not useful
         float: left;
         &:not(:last-child){
             margin-right: $gutter-horizontal;
+            @include respond (tab-port) {
+                margin-right: 0;
+                margin-bottom: $gutter-horizontal-small;
+            }
+        }
+        @include respond (tab-port) {
+            width: 100% !important;
         }
     }
     //Formular:

@@ -3,19 +3,29 @@
 @import "./abstracts/mixins.scss";
 //Variables: colors, font-size
 @import "./abstracts/variables.scss"; 
+
 @import "./base/base";
 @import "./base/animations"; //Same as all of the others
 @import "./base/typography";
 @import "./base/utilities";
-@import "./pages/home";
-@import "./layout/header";
-@import "./components/button";
 @import "./base/typography";
-@import "./layout/grid";
+
 @import "./components/composition";
 @import "./components/button";
 @import "./components/feature-box";
-@import "./components/cards"
+@import "./components/cards";
+@import "./components/stories";
+@import "./components/bg-video";
+@import "./components/form";
+@import "./components/popup";
+
+@import "./pages/home";
+
+@import "./layout/header";
+@import "./layout/grid";
+@import "./layout/footer";
+@import "./layout/navigation";
+
 @import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
 
 

@@ -1,5 +1,5 @@
 .btn {
-    &:visited,&:link {
+    &,&:visited,&:link {
         position: relative;
         text-decoration: none;
         text-transform: uppercase;
@@ -7,8 +7,11 @@
         transition: all .2s;
         display: inline-block;
         font-size: $font-size;
+        outline: none;
+        border: none;
+        cursor: pointer;
     }
-    &:hover {
+    &:hover,&:focus {
         transform: translateY(-0.1rem);
         box-shadow:0 1rem 2rem rgba($color-black, 0.8);
             /* on hover the after element should? */
@@ -24,6 +27,15 @@
     &--white {
         color: $color-grey-dark;
         background-color: $color-white;
+        margin: .3rem;
+        padding: 1.5rem 4rem;
+        &::after{
+            background-color: inherit;
+        }
+    }
+    &--green{
+        color: $color-white;
+        background-color: $color-primary;
         margin: .3rem;
         padding: 1.5rem 4rem;
         &::after{
