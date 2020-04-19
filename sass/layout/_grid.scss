@@ -4,7 +4,8 @@
     margin: 0 auto;
     font-size: 1.6rem;
     @include respond (tab-port) {
-        max-width: $grid-width-small
+        max-width: $grid-width-small;
+        padding: 0 1rem;
     }
     &:not(:last-child){
         margin-bottom: $gutter-vertical;

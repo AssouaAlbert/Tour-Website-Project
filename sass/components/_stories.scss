@@ -53,4 +53,20 @@
         filter: blur(3px) brightness(90%);
         transform: scale(1);
     }
+    @include respond (tab-port) {
+        width: 100%;
+        padding: 3rem;
+        padding-left: 5rem;
+        transform: skewX(0);
+        & > * {
+            transform: skewX(0);
+        }
+        &__shape{
+            overflow: hidden;
+            float: left;
+            position: relative;
+            width: 10rem;
+            height: 10rem;
+        }
+    }
 }

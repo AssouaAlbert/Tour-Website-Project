@@ -1,8 +1,11 @@
 .footer {
     background-color: $color-grey-darker;
     padding: 2rem 0 5rem;
+    text-align: center;
     &__logo-box {
-
+        @include respond(tab-port) {
+            margin-bottom: 1rem !important;
+        }
     }
     &__logo {
         width: 15rem;
@@ -12,15 +15,24 @@
     &__navigation {
         border-top: 0.1rem solid $color-grey-light-1;
         padding-top: 1.5rem;
-        display: inline-block;      
+        display: inline-block;
+        @include respond(tab-port) {
+            width: 100%;
+        }      
     }
     &__list {
         list-style: none;
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
     &__item {
         display: inline-block;
         &:not(:first-child){
             margin-left: 1.5rem;
+            @include respond(tab-port) {
+                margin-left: 0.5rem
+            }     
         }
     }
     &__link {
@@ -43,5 +55,8 @@
         border-top: 0.1rem solid $color-grey-light-1;
         padding-top: 1.5rem;
         width: 85%;
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 }

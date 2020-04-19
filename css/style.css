@@ -156,12 +156,21 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 2rem !important; } }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-small {
+      margin-bottom: 1rem !important; } }
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-top-big {
+      margin-top: 6rem !important; } }
 
 body {
   font-family: "Gotu" , Candara, sans-serif;
@@ -240,15 +249,34 @@ body {
     position: absolute;
     z-index: 0;
     transition: all 0.2s; }
+    @media only screen and (max-width: 56.25em) {
+      .composition__photo {
+        float: left;
+        position: relative;
+        width: 33.3333%;
+        box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.2); } }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .composition__photo--p1 {
+          left: 0;
+          top: -2rem; } }
     .composition__photo--p2 {
       right: 0;
       top: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .composition__photo--p2 {
+          right: 2rem;
+          top: 2rem;
+          z-index: 9; } }
     .composition__photo--p3 {
       top: 10rem;
       left: 20%; }
+      @media only screen and (max-width: 56.25em) {
+        .composition__photo--p3 {
+          top: 0;
+          left: -10%; } }
     .composition__photo:hover {
       outline: 1.5rem solid #55c57a;
       border: 2rem solid rgba(0, 0, 0, 0);
@@ -368,6 +396,8 @@ body {
     border-radius: 4px;
     box-shadow: 2rem 2rem 4rem rgba(40, 180, 133, 0.3);
     overflow: hidden; }
+    .card__side--front {
+      background-color: #fff; }
     .card__side--back {
       background-color: green;
       transform: rotateY(180deg); }
@@ -449,6 +479,34 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 2rem 2rem 4rem rgba(40, 180, 133, 0.3); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none;
+        border-radius: 0; }
+        .card__side--back {
+          transform: rotateY(0deg);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+      .card:hover .card__side--front {
+        transform: rotateY(0deg); }
+      .card__cta {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        width: 100%;
+        margin: 5rem 0; }
+      .card__price-box {
+        margin-bottom: 2rem; }
+      .card__price-value {
+        font-size: 6rem;
+        font-weight: 100; } }
 
 .story {
   font-size: 1.6rem;
@@ -498,6 +556,20 @@ body {
   .story:hover .story__image {
     filter: blur(3px) brightness(90%);
     transform: scale(1); }
+  @media only screen and (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 3rem;
+      padding-left: 5rem;
+      transform: skewX(0); }
+      .story > * {
+        transform: skewX(0); }
+      .story__shape {
+        overflow: hidden;
+        float: left;
+        position: relative;
+        width: 10rem;
+        height: 10rem; } }
 
 .bg-video {
   position: absolute;
@@ -526,6 +598,9 @@ body {
   width: 90%;
   display: block;
   transition: all 0.3; }
+  @media only screen and (max-width: 37.5em) {
+    .form__input {
+      width: 100%; } }
   .form__input::-webkit-input-placeholder {
     color: #777777; }
   .form__input:focus {
@@ -552,6 +627,11 @@ body {
 .form__radio-group {
   display: inline-block;
   width: 45%; }
+  @media only screen and (max-width: 37.5em) {
+    .form__radio-group {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1rem; } }
 
 .form__radio-input {
   display: none; }
@@ -654,6 +734,9 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -12rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-about {
+      padding: 15rem 0; } }
 
 .section-features {
   padding: 20rem 0;
@@ -668,6 +751,9 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0 4rem 0;
   margin-top: -12rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-tours {
+      padding: 15rem 0 1rem 0; } }
 
 .section-stories {
   position: relative;
@@ -677,16 +763,31 @@ body {
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+  @media only screen and (max-width: 56.25em) {
+    .section-book {
+      padding: 5rem 0; } }
 
 .book {
   background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../../img/nat-10.jpg");
   background-size: cover;
   border-radius: 4px;
-  box-shadow: 0.2rem 0.4rem 0.6rem rgba(0, 0, 0, 0.8);
-  height: 50rem; }
+  box-shadow: 0.2rem 0.4rem 0.6rem rgba(0, 0, 0, 0.8); }
   .book__form {
     width: 50%;
     padding: 6rem; }
+  @media only screen and (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 70%), url("../../img/nat-10.jpg"); }
+      .book__form {
+        width: 80%;
+        padding: 4rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("../../img/nat-10.jpg"); }
+      .book__form {
+        margin: 0 auto;
+        width: 100%;
+        padding: 2rem; } }
 
 .header {
   position: relative;
@@ -722,7 +823,8 @@ body {
   font-size: 1.6rem; }
   @media only screen and (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 70rem;
+      padding: 0 1rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
     @media only screen and (max-width: 56.25em) {
@@ -758,7 +860,11 @@ body {
 
 .footer {
   background-color: #333;
-  padding: 2rem 0 5rem; }
+  padding: 2rem 0 5rem;
+  text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .footer__logo-box {
+      margin-bottom: 1rem !important; } }
   .footer__logo {
     width: 15rem;
     display: block;
@@ -767,12 +873,21 @@ body {
     border-top: 0.1rem solid #f7f7f7;
     padding-top: 1.5rem;
     display: inline-block; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%; } }
   .footer__list {
     list-style: none; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__list {
+        width: 100%; } }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:first-child) {
       margin-left: 1.5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .footer__item:not(:first-child) {
+          margin-left: 0.5rem; } }
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
     text-decoration: none;
@@ -788,6 +903,9 @@ body {
     border-top: 0.1rem solid #f7f7f7;
     padding-top: 1.5rem;
     width: 85%; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%; } }
 
 .navigation__checkbox {
   display: none; }

@@ -7,18 +7,36 @@
         position: absolute;
         z-index: 0;
         transition: all 0.2s;
-        
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33.3333%;
+            box-shadow: 0 0.1rem 2rem rgba($color-black,0.2);
+        }
         &--p1 {
             left: 0;
             top: -2rem;
+            @include respond(tab-port) {
+                left: 0;
+                top: -2rem;
+            }
         }
         &--p2 {
             right: 0;
             top: 2rem;
+            @include respond(tab-port) {
+                right: 2rem;
+                top: 2rem;
+                z-index: 9;
+            }
         }
         &--p3 {
             top: 10rem;
             left: 20%;
+            @include respond(tab-port) {
+                top: 0;
+                left: -10%;
+            }
         }
 
         &:hover{

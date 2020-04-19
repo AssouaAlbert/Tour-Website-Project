@@ -16,7 +16,7 @@
         box-shadow: 2rem 2rem 4rem rgba($color-primary-dark,.3);
         overflow: hidden;
         &--front{
-            
+            background-color: $color-white;
         }
         &--back{
             background-color: green;
@@ -146,5 +146,45 @@
     &__price-value{
         font-size: 6rem;
         font-weight: 100;
+    }
+
+    @include respond(tab-port) {
+        height: auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 2rem 2rem 4rem rgba($color-primary-dark,.3);
+        &__side{
+            height: auto;
+            position: relative;
+            box-shadow: none;
+            border-radius: 0;
+            &--front{
+                
+            }
+            &--back{
+                transform: rotateY(0deg);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+        &:hover &__side--front {
+            transform: rotateY(0deg);
+        }
+        //Back side styling
+        &__cta{
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0,0);
+            width: 100%;
+            margin: 5rem 0;
+        }
+        &__price-box{
+            margin-bottom: 2rem;
+        }
+            &__price-value{
+            font-size: 6rem;
+            font-weight: 100;
+        }
+    
     }
 }

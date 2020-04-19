@@ -14,6 +14,9 @@
         width: 90%;
         display: block;
         transition: all 0.3;
+        @include respond (phone) { 
+            width: 100%;
+        }
         &::-webkit-input-placeholder{
             color: $color-grey-dark;
         }
@@ -46,6 +49,11 @@
     &__radio-group {
         display: inline-block;
         width: 45%;
+        @include respond (phone) { 
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
     }
     &__radio-input {
         display: none;
@@ -55,7 +63,6 @@
         cursor: pointer;
         padding-left: 4rem;
         position: relative;
-
     }
     &__radio-button {
         width: 3rem;
