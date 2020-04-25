@@ -1,10 +1,19 @@
 .header {
+    height: 85h;
     position: relative;
     /* vh: viewport height */
-    height: 95vh;
-    background:linear-gradient(to right bottom,rgba($color-primary-light, 0.80),rgba($color-primary-dark, 0.8)),$color-white url("../img/hero.jpg") no-repeat fixed top;
-    clip-path: polygon(100% 0, 100% 75vh, 0 100%, 0 0);
-    -webkit-clip-path:polygon(100% 0, 100% 75vh, 0 100%, 0 0);
+    background:linear-gradient(to right bottom,
+    rgba($color-primary-light, 0.80),
+    rgba($color-primary-dark, 0.8)),
+    $color-white url("../img/hero-small.jpg") no-repeat fixed top;
+    background-size: cover;
+    @supports (
+        (clip-path: polygon(0 0)) or
+        (-webkit-clip-path:polygon(0 0))) {
+            clip-path: polygon(100% 0, 100% 75vh, 0 100%, 0 0);
+            -webkit-clip-path:polygon(100% 0, 100% 75vh, 0 100%, 0 0);
+            height: 95vh;
+        }
     &__logobox {
         position: absolute;
         top: 4rem;
@@ -19,6 +28,15 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+    }
+    @media (min-resolution: 192dpi) and (min-width:37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width:37.5em),
+    (min-width:125em){
+        background:linear-gradient(to right bottom,
+        rgba($color-secondary-light, 0.80),
+        rgba($color-secondary-dark, 0.8)),
+        $color-white url("../img/hero.jpg") no-repeat fixed top;
+        background-size: cover;
     }
     @include respond (tab-port) {
         -webkit-clip-path:polygon(100% 0, 100% 80vh, 0 100%, 0 0);

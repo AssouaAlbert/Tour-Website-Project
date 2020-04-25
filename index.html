@@ -6,7 +6,7 @@
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/icon-font.css">
+        <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
@@ -69,9 +69,24 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                        <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                            <img 
+                            srcset="img/nat-1.jpg 300w,img/nat-1-large.jpg 1000w" alt=""
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 32.3333vw, 270px"
+                            alt="Photo 1" class="composition__photo composition__photo--p1"
+                            src="img/nat-1-large.jpg">
+                            <img 
+                            srcset="img/nat-2.jpg 300w,img/nat-2-large.jpg 1000w" alt=""
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 32.3333vw, 270px"
+                            alt="Photo 2" class="composition__photo composition__photo--p2"
+                            src="img/nat-2-large.jpg">
+                            <img 
+                            srcset="img/nat-3.jpg 300w,img/nat-3-large.jpg 1000w" alt=""
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 32.3333vw, 270px"
+                            alt="Photo 3" class="composition__photo composition__photo--p3"
+                            src="img/nat-3-large.jpg">
+                        <!--
+                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"> -->
                     </div>
                 </div>
             </div>
@@ -113,7 +128,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit./p>
                     </div>
                 </div>
-             </div>
+            </div>
         </section>
         <section class="section-tours" id="section-tours">
             <div class="u-text-center u-margin-bottom-big">
@@ -319,7 +334,15 @@
     </main> 
     <footer class="footer">
         <div class="footer__logo-box u-margin-bottom-small">
-            <img src="./img/logo-green-2x.png" alt="Footer Logo" class="footer__logo">
+            <picture class="footer__logo">
+                <source
+                media="(max-width: 37.5em)"
+                srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                alt="Footer Logo" 
+                src="img/logo-green-2x.png"
+                >
+                <img srcset="img/logo-green-1x.png 1x,img/logo-green-2x.png 2x"  >
+            </picture>
         </div>
         <div class="row">
             <div class="col-1-of-2">

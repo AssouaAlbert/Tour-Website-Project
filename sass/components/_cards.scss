@@ -12,6 +12,7 @@
         top: 0;
         width: 100%;
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
         border-radius: 4px;
         box-shadow: 2rem 2rem 4rem rgba($color-primary-dark,.3);
         overflow: hidden;
@@ -161,6 +162,7 @@
             &--back{
                 transform: rotateY(0deg);
                 clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+                -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
             }
         }
         &:hover &__side--front {
