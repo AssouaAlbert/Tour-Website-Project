@@ -490,6 +490,10 @@ body {
     body {
       padding: 0rem; } }
 
+::selection {
+  color: #fff;
+  background-color: #cc9400; }
+
 @keyframes moveup {
   0% {
     opacity: 0;
@@ -926,7 +930,7 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 75em), only screen and (hover: none) {
     .card {
       height: auto;
       border-radius: 3px;
@@ -1191,7 +1195,7 @@ body {
     font-size: 1.4rem;
     column-count: 2;
     column-gap: 1em;
-    column-rule: 1px solt rgba(0, 0, 0, 0.7);
+    column-rule: 1px solid rgba(0, 0, 0, 0.7);
     -moz-column-count: 2;
     -moz-column-gap: 1em;
     -moz-column-rule: 1px solt rgba(0, 0, 0, 0.7);
@@ -1290,7 +1294,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
     .header {
       background: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(204, 148, 0, 0.8)), #fff url("../img/hero.jpg") no-repeat fixed top;
       background-size: cover; } }
