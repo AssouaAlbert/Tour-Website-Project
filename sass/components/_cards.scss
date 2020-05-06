@@ -47,7 +47,7 @@
     }
     //Front side styling
     &__picture{
-        //Use modifiers when the elelments ahre the same properties
+        //Use modifiers when the elements are the same properties
         background-blend-mode: multiply;
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
